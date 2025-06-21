@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model ProjectSigmoind.Domain.Models.PromntModel
+
+<form asp-action="Create" method="post">
+    <div>
+        <h2> MentorGPT </h2>
+        <input asp-for="UserPromnt" class="form-control" />
+        <span asp-validation-for="UserPromnt" class="text-danger"></span>
+    </div>
+</form>
