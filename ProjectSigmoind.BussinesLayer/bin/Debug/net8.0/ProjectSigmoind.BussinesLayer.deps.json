@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ProjectSigmoind.BussinesLayer/1.0.0": {
+        "dependencies": {
+          "ProjectSigmoind.Domain": "1.0.0"
+        },
+        "runtime": {
+          "ProjectSigmoind.BussinesLayer.dll": {}
+        }
+      },
+      "ProjectSigmoind.Domain/1.0.0": {
+        "runtime": {
+          "ProjectSigmoind.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProjectSigmoind.BussinesLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProjectSigmoind.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

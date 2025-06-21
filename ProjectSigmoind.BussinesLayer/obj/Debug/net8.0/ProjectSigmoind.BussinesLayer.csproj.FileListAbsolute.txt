@@ -1,0 +1,15 @@
+C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.BussinesLayer\bin\Debug\net8.0\ProjectSigmoind.BussinesLayer.deps.json
+C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.BussinesLayer\bin\Debug\net8.0\ProjectSigmoind.BussinesLayer.dll
+C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.BussinesLayer\bin\Debug\net8.0\ProjectSigmoind.BussinesLayer.pdb
+C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.BussinesLayer\bin\Debug\net8.0\ProjectSigmoind.Domain.dll
+C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.BussinesLayer\bin\Debug\net8.0\ProjectSigmoind.Domain.pdb
+C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.BussinesLayer\obj\Debug\net8.0\ProjectSigmoind.BussinesLayer.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.BussinesLayer\obj\Debug\net8.0\ProjectSigmoind.BussinesLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.BussinesLayer\obj\Debug\net8.0\ProjectSigmoind.BussinesLayer.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.BussinesLayer\obj\Debug\net8.0\ProjectSigmoind.BussinesLayer.AssemblyInfo.cs
+C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.BussinesLayer\obj\Debug\net8.0\ProjectSigmoind.BussinesLayer.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.BussinesLayer\obj\Debug\net8.0\ProjectS.89D009C8.Up2Date
+C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.BussinesLayer\obj\Debug\net8.0\ProjectSigmoind.BussinesLayer.dll
+C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.BussinesLayer\obj\Debug\net8.0\refint\ProjectSigmoind.BussinesLayer.dll
+C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.BussinesLayer\obj\Debug\net8.0\ProjectSigmoind.BussinesLayer.pdb
+C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.BussinesLayer\obj\Debug\net8.0\ref\ProjectSigmoind.BussinesLayer.dll
