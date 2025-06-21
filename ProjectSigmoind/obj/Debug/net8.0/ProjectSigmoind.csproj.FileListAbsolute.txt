@@ -18,6 +18,7 @@ C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind\obj\Debug\net8.0\Proj
 C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind\obj\Debug\net8.0\ProjectSigmoind.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind\obj\Debug\net8.0\ProjectSigmoind.RazorAssemblyInfo.cache
 C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind\obj\Debug\net8.0\ProjectSigmoind.RazorAssemblyInfo.cs
+C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind\obj\Debug\net8.0\ProjectSigmoind.sourcelink.json
 C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind\obj\Debug\net8.0\staticwebassets\msbuild.ProjectSigmoind.Microsoft.AspNetCore.StaticWebAssets.props

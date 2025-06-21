@@ -4,9 +4,20 @@
 @model ProjectSigmoind.Domain.Models.PromntModel
 
 <form asp-action="Create" method="post">
-    <div>
-        <h2> MentorGPT </h2>
+    <div class="form-group">
+        <h2>MentorGPT</h2>
+
+        <label asp-for="UserPromnt">Let's learn something new!</label>
         <input asp-for="UserPromnt" class="form-control" />
         <span asp-validation-for="UserPromnt" class="text-danger"></span>
+
+        <button type="submit" class="btn btn-primary mt-2">Submit</button>
     </div>
 </form>
+
+@if(ViewBag.Response != null) {
+    <div class="alert alert-info mt-4">
+        <strong>Ответ от ментора:</strong><br />
+        @ViewBag.Response
+    </div>
+}
