@@ -8,6 +8,7 @@ C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.BussinesLayer\obj\Deb
 C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.BussinesLayer\obj\Debug\net8.0\ProjectSigmoind.BussinesLayer.AssemblyInfoInputs.cache
 C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.BussinesLayer\obj\Debug\net8.0\ProjectSigmoind.BussinesLayer.AssemblyInfo.cs
 C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.BussinesLayer\obj\Debug\net8.0\ProjectSigmoind.BussinesLayer.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.BussinesLayer\obj\Debug\net8.0\ProjectSigmoind.BussinesLayer.sourcelink.json
 C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.BussinesLayer\obj\Debug\net8.0\ProjectS.89D009C8.Up2Date
 C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.BussinesLayer\obj\Debug\net8.0\ProjectSigmoind.BussinesLayer.dll
 C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.BussinesLayer\obj\Debug\net8.0\refint\ProjectSigmoind.BussinesLayer.dll

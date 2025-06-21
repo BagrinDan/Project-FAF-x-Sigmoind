@@ -7,15 +7,17 @@ using System.Threading.Tasks;
 using ProjectSigmoind.Domain.Entitys;
 
 namespace ProjectSigmoind.BussinesLayer.Enitity.User {
-    public class User {
-        private readonly UserEntity user;
+    public class User : IUserInterface{
+        private readonly UserEntity _user;
 
-        public User(string UserName) { 
-            this.Name = UserName;
+        public User(UserEntity user) { 
+            _user = user;
         }
 
         // Action
-        
+        public string userActionPromnt(User userPromnt) {
+            return "NullForNow"; // Need realization
+        }
 
     }
 }
