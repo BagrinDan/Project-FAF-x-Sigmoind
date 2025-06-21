@@ -1,0 +1,11 @@
+C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.Domain\bin\Debug\net8.0\ProjectSigmoind.Domain.deps.json
+C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.Domain\bin\Debug\net8.0\ProjectSigmoind.Domain.dll
+C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.Domain\bin\Debug\net8.0\ProjectSigmoind.Domain.pdb
+C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.Domain\obj\Debug\net8.0\ProjectSigmoind.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.Domain\obj\Debug\net8.0\ProjectSigmoind.Domain.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.Domain\obj\Debug\net8.0\ProjectSigmoind.Domain.AssemblyInfo.cs
+C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.Domain\obj\Debug\net8.0\ProjectSigmoind.Domain.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.Domain\obj\Debug\net8.0\ProjectSigmoind.Domain.dll
+C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.Domain\obj\Debug\net8.0\refint\ProjectSigmoind.Domain.dll
+C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.Domain\obj\Debug\net8.0\ProjectSigmoind.Domain.pdb
+C:\Users\user\source\repos\ProjectSigmoind\ProjectSigmoind.Domain\obj\Debug\net8.0\ref\ProjectSigmoind.Domain.dll
