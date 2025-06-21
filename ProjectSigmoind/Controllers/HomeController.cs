@@ -11,32 +11,31 @@ namespace ProjectSigmoind.Controllers {
 
         public HomeController(ILogger<HomeController> logger, IMentorGPT mentorGPT) {
             _logger = logger;
-            _mentorGPT = mentorGPT; 
+            _mentorGPT = mentorGPT;
         }
 
+        [HttpGet]
         public IActionResult Index() {
-            return View();
-        }
-
-        // -- Content --
-        public IActionResult CreatePromnt() {
-            return View();
+            return View(new PromntModel());
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(PromntModel model) {
-            if(ModelState.IsValid) {
-                var response = await _mentorGPT.MentorResponse(model.UserPromnt);
-                ViewBag.Response = response;
+        public async Task<IActionResult> Index(PromntModel model) {
+            if(string.IsNullOrWhiteSpace(model.UserPromnt)) {
+                ModelState.AddModelError("UserPromnt", "¬ведите вопрос");
+                return View(model);
             }
 
-            return View("Index", model); 
-        }
-        // --
+            model.Response = await _mentorGPT.MentorResponse(model.UserPromnt);
+            model.Links = new Dictionary<string, string> {
+                {"Google", "https://www.google.com/search?q=" + System.Net.WebUtility.UrlEncode(model.UserPromnt)},
+                {"Wikipedia", "https://en.wikipedia.org/wiki/Special:Search?search=" + System.Net.WebUtility.UrlEncode(model.UserPromnt)}
+            };
 
-        public IActionResult Privacy() {
-            return View();
+            return View(model);
         }
+
+        public IActionResult Privacy() => View();
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error() {

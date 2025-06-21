@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ProjectSigmoind.BussinesLayer.AI.Entity;
+using ProjectSigmoind.Domain.Models;
 
 namespace ProjectSigmoind.Controllers {
     public class MentorController : Controller {
@@ -9,9 +10,26 @@ namespace ProjectSigmoind.Controllers {
             _mentorGPT = mentorGPT;
         }
 
-        public async Task<IActionResult> Chat(string userInput) {
-            var mentorReply = await _mentorGPT.MentorResponse(userInput);
-            return Json(new { response = mentorReply });
+        [HttpGet]
+        public IActionResult Create() {
+            return View(new PromntModel());
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(PromntModel model) {
+            if(string.IsNullOrWhiteSpace(model.UserPromnt)) {
+                ModelState.AddModelError("", "Question is required.");
+                return View(model);
+            }
+
+            model.Response = await _mentorGPT.MentorResponse(model.UserPromnt);
+            model.Links = new Dictionary<string, string> {
+        {"Google", "https://www.google.com/search?q=" + System.Net.WebUtility.UrlEncode(model.UserPromnt)},
+        {"Wikipedia", "https://en.wikipedia.org/wiki/Special:Search?search=" + System.Net.WebUtility.UrlEncode(model.UserPromnt)}
+    };
+
+            return View(model);
+        }
+
     }
 }

@@ -3,21 +3,62 @@
 }
 @model ProjectSigmoind.Domain.Models.PromntModel
 
-<form asp-action="Create" method="post">
-    <div class="form-group">
-        <h2>MentorGPT</h2>
+<header>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 
-        <label asp-for="UserPromnt">Let's learn something new!</label>
-        <input asp-for="UserPromnt" class="form-control" />
-        <span asp-validation-for="UserPromnt" class="text-danger"></span>
+    <style>
+        .main-div {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+        }
 
-        <button type="submit" class="btn btn-primary mt-2">Submit</button>
-    </div>
-</form>
+        .form-group {
+            width: 100%;
+            max-width: 1000px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-@if(ViewBag.Response != null) {
-    <div class="alert alert-info mt-4">
-        <strong>Ответ от ментора:</strong><br />
-        @ViewBag.Response
-    </div>
-}
+    </style>
+
+</header>
+
+<body>
+
+    <h2>MentorGPT</h2>
+
+    <form asp-action="Index" method="post">
+        <div>
+            <label asp-for="UserPromnt">Введите вопрос:</label>
+            <input asp-for="UserPromnt" class="form-control" />
+            <span asp-validation-for="UserPromnt" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-2">Спросить</button>
+    </form>
+
+    @if (Model != null && !string.IsNullOrWhiteSpace(Model.Response)) {
+        <div class="mt-4 p-3 bg-light border rounded">
+            <strong>Ответ:</strong>
+            <p>@Model.Response</p>
+
+            @if (Model.Links != null && Model.Links.Any()) {
+                <strong>Полезные ссылки:</strong>
+                <ul>
+                    @foreach (var link in Model.Links) {
+                        <li><a href="@link.Value" target="_blank">@link.Key</a></li>
+                    }
+                </ul>
+            }
+        </div>
+    }
+
+</body>
+
+

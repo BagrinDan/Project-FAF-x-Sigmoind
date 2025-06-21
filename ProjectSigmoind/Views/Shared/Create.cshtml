@@ -1,0 +1,66 @@
+﻿@model ProjectSigmoind.Domain.Models.PromntModel
+
+@{
+    ViewData["Title"] = "Chatbot";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 40px;
+            background: #f9f9f9;
+        }
+
+        input[type=text], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        input[type=submit] {
+            padding: 10px 20px;
+        }
+
+        .response {
+            background: #e0f7fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🤖 Chatbot</h1>
+
+    <form asp-controller="Mentor" asp-action="Create" method="post">
+        <label asp-for="UserPromnt"></label>
+        <input asp-for="UserPromnt" required class="form-control" />
+        <span asp-validation-for="UserPromnt" class="text-danger"></span>
+
+        <button type="submit">Ask</button>
+    </form>
+
+    @if(Model != null && !string.IsNullOrEmpty(Model.Response)) {
+        <div class="response">
+            <p><strong>Answer:</strong> @Model.Response</p>
+
+            @if(Model != null && Model.Links.Any()) {
+                <p><strong>Resources:</strong></p>
+                <ul>
+                    @foreach(var link in Model.Links) {
+                        <li><a href="@link.Value" target="_blank">@link.Key</a></li>
+                    }
+                </ul>
+            }
+        </div>
+    }
+</body>
+</html>
