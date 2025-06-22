@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjectSigmoind")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41cd646fbcad33c583a772796a4ee2137a54bc18")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d59122713e84068aa107aa5dc32bf196d26f50b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjectSigmoind")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjectSigmoind")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
