@@ -1,0 +1,31 @@
+﻿header .navbar {
+    background-color: var(--background);
+    border-bottom: 2px solid var(--primary);
+    box-shadow: 0 3px 6px rgba(124, 77, 255, 0.1);
+    padding: 0.5rem 1rem;
+}
+
+header .navbar-brand {
+    color: var(--primary) !important;
+    font-weight: 700;
+    font-size: 1.8rem;
+    transition: color 0.3s ease;
+}
+
+    header .navbar-brand:hover {
+        color: var(--primary-dark) !important;
+        text-decoration: none;
+    }
+
+header .nav-link {
+    color: var(--text) !important;
+    font-weight: 600;
+    margin-right: 1.25rem;
+    transition: color 0.3s ease;
+}
+
+    header .nav-link:hover,
+    header .nav-link:focus {
+        color: var(--primary);
+        text-decoration: underline;
+    }

@@ -7,8 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\css\footer.css" />
+    <None Include="wwwroot\css\index.css" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ProjectSigmoind.BussinesLayer\ProjectSigmoind.BussinesLayer.csproj" />
     <ProjectReference Include="..\ProjectSigmoind.Domain\ProjectSigmoind.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Content\style\css\" />
   </ItemGroup>
 
 </Project>

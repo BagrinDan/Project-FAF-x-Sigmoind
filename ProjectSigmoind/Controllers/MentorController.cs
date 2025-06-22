@@ -1,12 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ProjectSigmoind.BussinesLayer.AI.Entity;
 using ProjectSigmoind.Domain.Models;
+using ProjectSigmoind.BussinesLayer.AI.Interface;
 
 namespace ProjectSigmoind.Controllers {
     public class MentorController : Controller {
-        private readonly MentorGPT _mentorGPT;
+        private readonly IMentorGPT _mentorGPT;
 
-        public MentorController(MentorGPT mentorGPT) {
+        public MentorController(IMentorGPT mentorGPT) {
             _mentorGPT = mentorGPT;
         }
 
@@ -23,10 +24,10 @@ namespace ProjectSigmoind.Controllers {
             }
 
             model.Response = await _mentorGPT.MentorResponse(model.UserPromnt);
-            model.Links = new Dictionary<string, string> {
-        {"Google", "https://www.google.com/search?q=" + System.Net.WebUtility.UrlEncode(model.UserPromnt)},
-        {"Wikipedia", "https://en.wikipedia.org/wiki/Special:Search?search=" + System.Net.WebUtility.UrlEncode(model.UserPromnt)}
-    };
+            //model.Links = new Dictionary<string, string> {
+            //    {"Google", "https://www.google.com/search?q=" + System.Net.WebUtility.UrlEncode(model.UserPromnt)},
+            //    {"Wikipedia", "https://en.wikipedia.org/wiki/Special:Search?search=" + System.Net.WebUtility.UrlEncode(model.UserPromnt)}
+            //};
 
             return View(model);
         }

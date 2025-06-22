@@ -5,6 +5,22 @@
       "PackagePath": "staticwebassets\\ProjectSigmoind.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\user\\source\\repos\\ProjectSigmoind\\ProjectSigmoind\\wwwroot\\css\\footer.css",
+      "PackagePath": "staticwebassets\\css\\footer.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\ProjectSigmoind\\ProjectSigmoind\\wwwroot\\css\\header.css",
+      "PackagePath": "staticwebassets\\css\\header.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\ProjectSigmoind\\ProjectSigmoind\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\ProjectSigmoind\\ProjectSigmoind\\wwwroot\\css\\layout.css",
+      "PackagePath": "staticwebassets\\css\\layout.css"
+    },
+    {
       "Id": "C:\\Users\\user\\source\\repos\\ProjectSigmoind\\ProjectSigmoind\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
