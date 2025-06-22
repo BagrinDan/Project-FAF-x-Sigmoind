@@ -18,16 +18,15 @@ namespace ProjectSigmoind.Controllers {
 
         [HttpPost]
         public async Task<IActionResult> Create(PromntModel model) {
+            // Валидация если промт был пустым
             if(string.IsNullOrWhiteSpace(model.UserPromnt)) {
                 ModelState.AddModelError("", "Question is required.");
                 return View(model);
             }
 
+            // Асинхронный ответ
             model.Response = await _mentorGPT.MentorResponse(model.UserPromnt);
-            //model.Links = new Dictionary<string, string> {
-            //    {"Google", "https://www.google.com/search?q=" + System.Net.WebUtility.UrlEncode(model.UserPromnt)},
-            //    {"Wikipedia", "https://en.wikipedia.org/wiki/Special:Search?search=" + System.Net.WebUtility.UrlEncode(model.UserPromnt)}
-            //};
+            
 
             return View(model);
         }

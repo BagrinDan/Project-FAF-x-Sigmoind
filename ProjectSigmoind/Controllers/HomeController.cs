@@ -22,11 +22,12 @@ namespace ProjectSigmoind.Controllers {
         [HttpPost]
         public async Task<IActionResult> Index(PromntModel model) {
             if(string.IsNullOrWhiteSpace(model.UserPromnt)) {
-                ModelState.AddModelError("UserPromnt", "Введите вопрос");
+                ModelState.AddModelError("UserPromnt", "");
                 return View(model);
             }
 
             model.Response = await _mentorGPT.MentorResponse(model.UserPromnt);
+            // Заглушка
             model.Links = new Dictionary<string, string> {
                 {"Google", "https://www.google.com/search?q=" + System.Net.WebUtility.UrlEncode(model.UserPromnt)},
                 {"Wikipedia", "https://en.wikipedia.org/wiki/Special:Search?search=" + System.Net.WebUtility.UrlEncode(model.UserPromnt)}

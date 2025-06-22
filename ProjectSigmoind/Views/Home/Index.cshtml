@@ -10,7 +10,7 @@
         <div class="chat-form">
             <form asp-action="Index" method="post">
                 <label asp-for="UserPromnt">Let's learn something new:</label>
-                <input asp-for="UserPromnt" type="text" placeholder="Ask me anything..." />
+                <input asp-for="UserPromnt" type="text" placeholder="Ask me anything..." autocomplete="off" />
                 <span asp-validation-for="UserPromnt" class="text-danger"></span>
 
                 <button type="submit">Submit</button>
