@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjectSigmoind.BussinesLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c17f9bb30b236ea3625383f76b026c6504584153")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5091473a61abafc7a28af9f1fe953ce989ded20d")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjectSigmoind.BussinesLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjectSigmoind.BussinesLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
